@@ -1,0 +1,26 @@
+{
+  "name": "countdown-timer",
+  "version": "1.0.0",
+  "description": "A React library used to countdown time",
+  "main": "dist/countdown.min.js",
+  "scripts": {
+    "build": "rollup -c -o dist/countdown.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipszdavido/countdown-timer.git"
+  },
+  "keywords": [],
+  "author": "Chidume Nnamdi <kurtwanger40@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipszdavido/countdown-timer/issues"
+  },
+  "homepage": "https://github.com/philipszdavido/countdown-timer#readme",
+  "devDependencies": {
+    "react": "^16.3.2",
+    "rollup": "^0.58.2",
+    "rollup-plugin-uglify": "^3.0.0"
+  }
+}
