@@ -28,7 +28,7 @@ class CountDown extends Component {
         this.setState({days, minutes, hours, seconds})
         if (t < 0) {
                 clearInterval(this.x);
-                this.setState({ days: 0, minutes: 0, hours: 0, seconds: 0, time_up: "TIME UP" })
+                this.setState({ days: 0, minutes: 0, hours: 0, seconds: 0, time_up: "TIME IS UP" })
             }
     }
     componentDidMount() {
@@ -45,24 +45,24 @@ class CountDown extends Component {
             <h1>Countdown Clock</h1>
             <div id="clockdiv">
             <div>
-                <span className="days" id="day"></span>
+                <span className="days" id="day">{days}</span>
                 <div className="smalltext">Days</div>
-                {days}
+                
             </div>
             <div>
-                <span className="hours" id="hour"></span>
+                <span className="hours" id="hour">{hours}</span>
                 <div className="smalltext">Hours</div>
-                {hours}
+                
             </div>
             <div>
-                <span className="minutes" id="minute"></span>
+                <span className="minutes" id="minute">{minutes}</span>
                 <div className="smalltext">Minutes</div>
-                {minutes}
+                
             </div>
             <div>
-                <span className="seconds" id="second"></span>
+                <span className="seconds" id="second">{seconds}</span>
                 <div className="smalltext">Seconds</div>
-                {seconds}
+                
             </div>
             </div>
             

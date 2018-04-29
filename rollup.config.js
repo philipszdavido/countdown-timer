@@ -8,6 +8,7 @@ import postcssModules from 'postcss-modules'
 
 const config = {
     input: 'src/countdown.js',
+    external: ['react'],
     plugins: [
         postcss({
             extract:true,
@@ -33,7 +34,6 @@ const config = {
     output: {
         format: 'umd',
         name: 'countdown',
-        external: ['react'],
         globals: {
             react: "React"
         }
